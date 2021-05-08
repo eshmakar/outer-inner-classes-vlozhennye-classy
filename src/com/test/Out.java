@@ -14,6 +14,7 @@ public class Out {
     public static void main(String[] args) {
         Out o = new Out();
         Inn oi = o.new Inn();
+        //        Out.Inn oi2 = new Out.new Inn(); так не получится создать
         o.outerVoid();
         oi.innerVoid();
     }
