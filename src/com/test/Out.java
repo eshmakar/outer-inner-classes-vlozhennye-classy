@@ -1,18 +1,19 @@
 package com.test;
 
 public class Out {
-    private class Inn{
-       private void innerVoid(){
+    class Inn {
+         void innerVoid() {
             System.out.println("innerVoid");
         }
-        private class InnInner{
-           private void innerInnerVoid(){
-               System.out.println("innerInnerVoid");
-           }
+
+        class InnInner {
+             void innerInnerVoid() {
+                System.out.println("innerInnerVoid");
+            }
         }
     }
 
-    private void outerVoid(){
+    private void outerVoid() {
         System.out.println("outerVoid");
     }
 
